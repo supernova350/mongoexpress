@@ -1,6 +1,6 @@
 {
   "name": "@supernova350/mongoexpress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Key-value MongoDB store written in TypeScript.",
   "main": "dist/index.js",
   "type": "module",
@@ -17,6 +17,10 @@
   ],
   "author": "supernova350",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supernova350/mongoexpress"
+  },
   "publishConfig": {
     "access": "public"
   },
