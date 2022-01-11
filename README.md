@@ -4,7 +4,15 @@
 
 Key-value MongoDB store written in TypeScript.
 
-## Example
+## Importing
+
+#### [!] Only supports ES Modules
+
+```ts
+import MongoExpress from '@supernova350/mongoexpress';
+```
+
+## Example Usage
 
 ```ts
 // initialize a MongoExpress instance
