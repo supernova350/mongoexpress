@@ -21,7 +21,7 @@
 		"resolveJsonModule": true,
 
 		// Emit
-		"declaration": false,
+		"declaration": true,
 		"importHelpers": true,
 		"importsNotUsedAsValues": "error",
 		"inlineSources": true,
