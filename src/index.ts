@@ -1,8 +1,5 @@
-import EventEmitter from 'events';
-import mongoose, { type Model } from 'mongoose';
-
-// CommonJS things
-const { connect, model, Schema, SchemaTypes } = mongoose;
+import { EventEmitter } from 'events';
+import { connect, connection, model, type Model, Schema, SchemaTypes } from 'mongoose';
 
 interface IMongoExpressSchema {
 	key: string;
@@ -13,7 +10,7 @@ export interface IMongoExpressOptions {
 	connectionString: string;
 }
 
-export default class MongoExpress extends EventEmitter {
+export class MongoExpress extends EventEmitter {
 	private readonly connectionString: string;
 	private _ready = false;
 	public readonly store = new Map<string, any>();
@@ -32,7 +29,7 @@ export default class MongoExpress extends EventEmitter {
 	}
 
 	public async connect(): Promise<void> {
-		if (this._ready || mongoose.connection.readyState !== 0) {
+		if (this._ready || connection.readyState !== 0) {
 			throw new Error('[mongoexpress] a mongoexpress connection already exists!');
 		}
 
