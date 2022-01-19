@@ -1,6 +1,6 @@
 {
 	"name": "@supernova350/mongoexpress",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Key-value MongoDB store written in TypeScript.",
 	"main": "lib/index.js",
 	"typings": "dist/types/index.d.ts",
