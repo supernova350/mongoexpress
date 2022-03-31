@@ -5,6 +5,7 @@ jest.setTimeout(15000);
 
 describe('mongoExpress testing', () => {
 	it('should be able to create a new instance', async () => {
+		console.log(process.env.ATLAS_URI.length)
 		const mongoExpress = new MongoExpress({
 			connectionString: process.env.ATLAS_URI,
 		});
