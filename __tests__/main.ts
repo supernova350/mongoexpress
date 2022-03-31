@@ -1,12 +1,10 @@
 import { MongoExpress } from '../src/index';
-import {config} from 'dotenv';
 
 jest.setTimeout(15000);
 
 describe('mongoExpress testing', () => {
 	it('should be able to create a new instance', async () => {
-		config();
-		console.log(process.env.ATLAS_URI.length)
+		console.log(process.env.ATLAS_URI.length);
 		const mongoExpress = new MongoExpress({
 			connectionString: process.env.ATLAS_URI,
 		});
