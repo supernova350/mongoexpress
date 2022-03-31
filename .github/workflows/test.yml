@@ -22,8 +22,8 @@ jobs:
 
       - name: Setup Env
         run: |
-          touch .env
-          echo ATLAS_URI=${{ secrets.ATLAS_URI }} >> .env
+          touch ../.env
+          echo ATLAS_URI=${{ secrets.ATLAS_URI }} >> ../.env
 
       - name: Run Jest
         run: yarn run jest
