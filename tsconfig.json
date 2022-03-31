@@ -10,7 +10,8 @@
 		"allowSyntheticDefaultImports": true,
 		"declarationDir": "dist/types",
 		"outDir": "dist/lib",
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"types": ["node", "jest"]
 	},
 	"include": ["src"]
 }
