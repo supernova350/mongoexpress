@@ -20,9 +20,7 @@ jobs:
       - name: Create .env with Github Secrets and run script
         run: |
           touch .env
-          echo ATLAS_URI=$ATLAS_URI >> .env
-        env:
-          ATLAS_URI: ${{ secrets.ATLAS_URI }}
+          echo ATLAS_URI=${{ secrets.ATLAS_URI }} >> .env
       
       - name: Run Jest
         run: yarn run test
