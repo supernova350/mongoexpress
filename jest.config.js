@@ -1,3 +1,3 @@
 module.exports = {
-	setupFiles: ['dotenv/config'],
+	setupFiles: ['<rootDir>/__tests__/setup-tests.ts'],
 };
