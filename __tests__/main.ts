@@ -1,5 +1,5 @@
 import { MongoExpress } from '../src/index';
-import 'dotnv/config';
+import 'dotenv/config';
 
 jest.setTimeout(15000);
 
