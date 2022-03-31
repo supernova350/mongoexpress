@@ -1,6 +1,4 @@
 import { MongoExpress } from '../src/index';
-import path from 'path';
-require('dotenv').config({ path: path.resolve(__dirname, '..', '.env') });
 
 jest.setTimeout(15000);
 
